@@ -1,0 +1,388 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 200px;
+    height: 50x;
+}
+.nav-buttons{
+    margin-left: 50%;
+}
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 300;
+}
+h6{
+    color: #D8D8D8;
+}
+
+.navbar{
+font-size: 20px;
+top: 0;
+left: 0;
+box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-nav .nav-link .nav-link {
+    color: black;
+    transition: 0.4 ease;
+}
+
+.navbar-light .navbar-nav .nav-link .active .navbar a{
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar i:hover, 
+.navbar-light .navbar-nav .nav-link .active .navbar i:hover{
+    color: coral;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4 ease;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+@media only screen and(max-width:990px){
+    .nav-buttons{
+        margin: 10px;
+    }
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav-buttons ul.fa-solid{
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+
+#home{
+    background: url("../imgs/bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 200px;
+    background-position-y:80px ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+#home span{
+    color: coral;
+}
+
+.black-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+.black-btn:hover{
+    background-color: coral;
+    color: black;
+}
+
+#brand{
+    margin-top: 30px;
+}
+
+#brand h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.text-uppercase{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.text-uppercase:hover{
+    background-color: coral;
+    color: black;
+}
+
+#new{
+    margin-top: 15px;
+}
+#new .one{
+    position: relative;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#new h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#new .details h2{
+    text-align: center;
+}
+#new .details button{
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#new .one:hover img{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#featured{
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+#featured button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#featured button:hover{
+    background-color: coral;
+}
+ #featured .product img{
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s all;
+ }
+ 
+ .product:hover img{
+    opacity: 0.7;
+    cursor: pointer;
+ }
+
+
+ #clothes .product img{
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s all;}
+
+#clothes button:hover{
+        background-color: coral;
+        color: black;
+ }
+
+ #clothes button{
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 12px;
+        cursor: pointer;
+}
+
+#watches .product img{
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s all;
+}
+
+#watches button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#watches button:hover{
+    background-color: coral;
+    color: black;
+}
+
+hr {
+        border: none;
+        border-top: 3px solid coral;
+        height: 0;
+      }
+      
+      #shoes .product img{
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s all;
+    }
+    
+    #shoes button{
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    #shoes button:hover{
+        background-color: coral;
+        color: black;
+    }
+
+footer h3, footer h5 {
+    color: coral;
+    text-transform: uppercase;
+}
+
+footer #footer-btm a{
+    color: coral;
+    text-transform: uppercase;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+   cursor: pointer;
+   flex-basis: 24%;
+  
+}
+
+.small-img{
+    width: 100%;
+  height: 100%;
+}
+
+.small-img:hover{
+    opacity: 0.7;
+}
+
+.buy-btn{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer; 
+}
+.buy-btn:hover{
+    background-color: coral;
+    color: black;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.single-product .buy-btn{
+    background-color: #fb774b;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#related button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#related button:hover{
+    background-color: coral;
+}
+ #related .product img{
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s all;
+ }
+
+ #related .my-5{
+    margin-top: 10rem !important;
+ }
+ button a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ button a:hover{
+    color: #000;
+ }
+
+
+
+ .main{
+    position: relative;
+    overflow: hidden;
+ }
+ .slide{
+    position: absolute;
+ }
+
