@@ -11,6 +11,27 @@
 </head>
 
 <body>
+<?php
+if(isset($_POST['submit'])){
+    $name=$_POST['name'];
+    $address=$_POST['add'];
+    $email =$_POST['eml'];
+    $phone = $_POST['pho'];
+    $or= $_POST['message'];
+
+    $host = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $dbname = 'myorder';
+    
+    
+    $conn = mysqli_connect($host, $user, $pass, $dbname);
+
+    $sql = "INSERT INTO orders(namee,addresss,emaill,contactno,orderdet) values ('$name', '$address', '$email', '$phone', '$or')";
+    mysqli_query($conn, $sql);
+
+}
+?>
   
   <!--MAIN-->
   <div class="container">
@@ -23,30 +44,28 @@
       <div class="contact">
         <h3>Details</h3>
         <div class="alert">Your order has been taken</div>
-        <form id="contactForm" method="post" action="process.php">
+        <form  method="post" action="#">
           <p>
             <label>Name</label>
-            <input type="text" name="uname" id="name" required>
+            <input type="text" name="name"  required>
           </p>
           <p>
             <label>Address</label>
-            <input type="text" name="add" id="company">
+            <input type="text" name="add" >
           </p>
           <p>
             <label>Email </label>
-            <input type="email" name="eml" id="email" required>
+            <input type="email" name="eml"  required>
           </p>
           <p>
             <label>Phone Number</label>
-            <input type="text" name="pho" id="phone">
+            <input type="text" name="pho" >
           </p>
           <p class="full">
             <label>Order</label>
-            <textarea name="message" rows="5" id="mess"></textarea>
+            <textarea name="message" ></textarea>
           </p>
-          <p class="full">
-            <button type="submit" name="submit" value="submit">Place Order</button>
-          </p>
+          <input type="submit" name="submit" value="Place Order">
         </form>
       </div>
     </div>
